@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sockets</title>
+    </head>
+    <body>
+        <script src="https://cdn.socket.io/4.0.1/socket.io.js"></script>
+        <script>
+            const socket = io.connect('http://127.0.0.1:3000')
+            //socket.emit('Recognised', 'my data from front end')
+            socket.on('newData',(newData)=>{
+                console.log(newData)
+            })
+        </script>
+    </body>
+</html>

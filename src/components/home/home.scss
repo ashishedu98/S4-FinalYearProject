@@ -1,0 +1,42 @@
+
+    .homeContainer{
+        // background-color: aquamarine;
+        width:100%;
+        padding: inherit;
+    
+        .row{
+            margin-top: 0vh;
+            &.liveWindowRow{
+                margin-top:5vh;
+                justify-content: space-around;
+                &.liveTime{
+                    justify-content: right;
+                }
+            }
+            &.liveWindowTitle{
+                justify-content: space-around;
+                &.row{
+                    margin-top: 0vh;
+                }
+              
+            }
+            .col-sm-10{
+                
+                padding: 15px;
+                // background-color: burlywood; 
+                
+                .liveWindow{
+                    height: inherit;
+                    width: inherit;
+                    img {
+                        &.liveContent{
+                        height: 100%;
+                        width: 100%;
+                        object-fit:contain;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,64 @@
+
+.container{
+
+    width: 100%;
+    padding: inherit;
+    //background-color:lightseagreen;
+    
+
+    .row{
+        margin-top: 3vh;
+        &.viewRecords{
+            .col-sm-12{
+                .title{
+            height: 100%;
+            width: 100%;
+            display: inline-block;   
+            margin-bottom: auto;
+            padding: auto;
+            width: fit-content;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            //color: lightblue;
+            
+            }
+            margin-top: 30px;
+            display: inline-block;
+            //background-color: lawngreen;
+            text-align: center;
+            position: inherit;
+            width: 100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            
+        }
+            
+        
+
+        }
+   
+        &.viewtblRecords{
+
+            .col-sm-12{
+                .tblRecords{
+
+                height: 100%;
+                width: 100%;
+                margin-bottom: auto;
+                margin-left: auto;  
+                margin-right: auto;
+                margin-top: auto;
+                position: relative;
+                margin-top: 10vh;
+                //background-color: ghostwhite;
+
+            }
+        }
+
+
+        }
+    }
+
+
+    
+
+}

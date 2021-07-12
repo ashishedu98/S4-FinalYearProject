@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h4>Enter the id  of the suspect to update:</h4><br>
+        <form action = "{% url 'update_function' %}" method="GET">
+            <label style = 'color:blue;'>Suspect id:</label><br>
+            <input type = 'text' id = 'sid' name = 'sid'><br><br>
+            <h4>Select name of the field to be changed that is to be changed:</h4>
+            <select id = "field" name = "field">
+                <option value = "name">name</option>
+                <option value = "age">age</option>
+                <option value = "location">location</option>
+                <option value = "threat">threat</option>
+                <option value = "lst">last_found</option>
+                <!--<option value = "date">date</option>-->
+            </select><br><br>
+            <h4>Enter the new value of the field:</h4>
+            <input type = "text" id = "value" name = "value">
+            
+            
+        <br><br><a href = "http://127.0.0.1:8000/update2"><button>Update suspect</button></a></form>
+
+    </body>
+</html>

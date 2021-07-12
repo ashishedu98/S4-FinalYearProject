@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin-left: 1em;
+            }
+        </style>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <h4>Enter all of the following details of the suspect</h4><br>
+        <form action = "{% url 'my_function' %}" method="GET">
+        <label style = 'color:blue;'>Suspect id: </label><br>
+        <input type = 'text' id = 'sid' name = 'sid'><br><br>
+        <label>Name: </label><br><input type = 'text' id = 'name' name = 'name'><br><br>
+        <label>Age: </label><br><input type = 'text' id = 'age' name='age'><br><br>
+        <label>Location: </label><br><input type = 'text' id = 'location' name="location"><br><br>
+        <label>Threat: </label><br><input type = 'text' id = 'threat' name='threat'><br><br>
+        <label>Last spotted time: </label><br><input type = 'text' id = 'lst' name = 'lst'><br><br>  
+        <!--<label>Date:</label><br><input type = 'text' id = 'lst' name = 'lst'><br><br>-->
+
+        <a href = "added.html"><input type = "submit" id="add" value = "Add suspect"></a></form>
+    </body>
+
+</html>
+
